@@ -1,5 +1,5 @@
 FROM maven:17
-FUN mvn clean package -DskipTests
+RUN mvn clean package -DskipTests
 
 FROM openjdk:17 
 ARG JAR_FILE=target/*.jar
